@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            max-width: 500px;
+            width: 100%;
+        }
+        .btn {
+            font-size: 1.1rem;
+            padding: 0.75rem;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4 text-center">
+        <h2 class="mb-4">Welcome</h2>
+        <p class="mb-4">You are logged in successfully!</p>
+        <div class="d-grid gap-3">
+            <a href="{% url 'signout' %}" class="btn btn-danger">
+                <i class="fas fa-sign-out-alt me-2"></i>Sign Out
+            </a>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- original TASK  -->
